@@ -35,7 +35,7 @@ for characters in range(0, nr_numbers):
 
 fixed_order_password = "".join(list_of_letters + list_of_symbols + list_of_numbers)
 
-print(f"\nYour randomly generated password (Fixed Order) is: {fixed_order_password}")
+# print(f"\nYour randomly generated password is: {fixed_order_password}")
 
 # CHALLENGE MODE (V2) - Order of characters randomised:
 # e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
@@ -52,4 +52,5 @@ true_random_list = fixed_order_list
 # converting list to string; true random password creation.
 random_order_password = "".join(true_random_list)
 
-print(f"Your randomly generated password (Random Order) is: {random_order_password}")
+print(f"\nYour randomly generated password is: {random_order_password}")
+
