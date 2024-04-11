@@ -29,12 +29,12 @@ operations = {
 
 def main():
     
-    num_1 = int(input("\nPlease enter the 1st number: "))
+    num_1 = float(input("\nPlease enter the 1st number: "))
     chosen_math_operator = input("\nEnter a math operator symbol to execute your calculations => [+] [-] [*] [/]: ")
-    num_next = int(input("\nPlease enter the next number: "))
+    num_next = float(input("\nPlease enter the next number: "))
 
     previous_calculated_sum = operations[chosen_math_operator](num_1, num_next)
-    print(f"\nCalculations: {num_1} {chosen_math_operator} {num_next} = {previous_calculated_sum}")
+    print(f"\nCalculations: {num_1} {chosen_math_operator} {num_next} = {previous_calculated_sum:.2f}")
 
     # -- END OF 1ST "CALCULATIONS" --
 
@@ -71,10 +71,10 @@ def main():
             break
 
         chosen_math_operator = input("\nEnter a math operator symbol to execute your calculations => [+] [-] [*] [/]: ")
-        num_next = int(input("\nPlease enter the next number: "))
+        num_next = float(input("\nPlease enter the next number: "))
 
         calculated_sum = operations[chosen_math_operator](previous_calculated_sum, num_next)
-        print(f"\nCalculations: {previous_calculated_sum} {chosen_math_operator} {num_next} = {calculated_sum}")
+        print(f"\nCalculations: {previous_calculated_sum} {chosen_math_operator} {num_next} = {calculated_sum:.2f}")
         previous_calculated_sum = calculated_sum
 
         ended_go_again_question = False
